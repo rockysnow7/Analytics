@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap" rel="stylesheet">
+    <link href="../static/style.css" rel="stylesheet">
+    <title>Analytics</title>
+  </head>
+  <body>
+    <h1>Analytics</h1>
+    <form name="search" method="post">
+      <input type="text" name="url" placeholder="URL..."><br>
+      <input type="text" name="kw" placeholder="Key word/phrase..."><br>
+      <input type="submit" value="Search">
+    </form>
+
+    <h2>Good: {{a["good"]}}%<br>Bad: {{a["bad"]}}%</h2>
+  </body>
+</html>
