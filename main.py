@@ -66,10 +66,12 @@ for sentence in sentences:  # for each sentence
     for word in synList("good", "s"):  # for every word in goodSyns
         if testWord in words and word in words:  # if testWord and synSyn are both in the sentence
             goodCount += 1  # increase goodCount
+            print(word)
 
     for word in synList("bad", "s"):  # same for "bad"
         if testWord in words and word in words:
             badCount += 1  # increase badCount
+            print(word)
 
 
 total = goodCount + badCount  # find percentages
@@ -78,4 +80,4 @@ if total > 0:
     badPerc = round((badCount / total) * 100, 2)
     print(f"\nSample size: {wordCount}\nGood: {goodPerc}%\nBad: {badPerc}%\n")  # print results
 else:
-    print(f"\nNo occurrences of {testWord} at {url}.\n")
+    print(f"\nNo occurrences of '{testWord}' at {url}.\n")
